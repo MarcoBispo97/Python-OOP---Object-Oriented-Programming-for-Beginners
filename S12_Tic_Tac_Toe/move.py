@@ -28,11 +28,3 @@ class Move:
 # |1|2|3|
 # |4|5|6|
 # |7|8|9|
-move = Move(5)
-print(move.is_valid())  # Output: True
-print(move.value)  # Output: 5
-print(move.get_row())  # Output: 1
-print(move.get_column())  # Output: 1
-move = Move(10)
-print(move.is_valid())  # Output: True
-print(move.value) 

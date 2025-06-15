@@ -1,5 +1,6 @@
-from move import Move
 import random
+from move import Move
+
 
 class Player:
 
@@ -7,7 +8,7 @@ class Player:
     COMPUTER_MARKER = 'O'
 
     def __init__(self, is_human=True):
-        self.is_human = is_human
+        self._is_human = is_human
 
         if is_human:
             self._marker = Player.PLAYER_MARKER
@@ -44,3 +45,8 @@ class Player:
         print(f"Computer chose move (1-9): {move.value}")
         return Move(1, 9)
     
+# player = Player(False) #Human Player
+# move = player.get_move()
+# print(move.value)
+# print(player.is_human)
+# print(player.marker)
